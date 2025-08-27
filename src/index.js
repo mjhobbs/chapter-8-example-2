@@ -23,6 +23,13 @@ app.get("/live", (req, res) => {
 });
 
 //
+// HTTP GET route we can use to check if the service is handling requests.
+//
+app.get("/live2", (req, res) => {
+    res.sendStatus(200);
+});
+
+//
 // Registers a HTTP GET route for video streaming.
 //
 app.get("/video", async (req, res) => { // Route for streaming video.
